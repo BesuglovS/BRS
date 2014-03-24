@@ -1,12 +1,15 @@
 package ru.besuglovs.nu.brs;
 import android.app.ActionBar;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class About extends ActionBarActivity {
@@ -29,6 +32,16 @@ public class About extends ActionBarActivity {
                 startActivity(Intent.createChooser(intent, "Отправить письмо"));
             }
         });
+
+        PackageInfo pInfo = null;
+        try {
+            pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+        } catch (Exception e) {
+            return;
+        }
+
+        TextView versionText = (TextView) findViewById(R.id.VersionTextView);
+        versionText.setText("Version: " + pInfo.versionName);
     }
 
 
