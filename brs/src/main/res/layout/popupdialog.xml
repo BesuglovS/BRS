@@ -8,5 +8,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/score"
         android:layout_gravity="left|center_vertical"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:inputType="number" />
 </LinearLayout>

@@ -11,7 +11,7 @@
     <string name="MenuItem_About">О программе</string>
     <string name="About_AppName">Расчёт коэффициента и итоговой оценки по бально-рейтинговой системе</string>
     <string name="About_version">version *.*</string>
-    <string name="About_SourceCodeLabel">Исходный код:\nhttps://github.com/BesuglovS/BRS2</string>
+    <string name="About_SourceCodeLabel">Исходный код:\nhttps://github.com/BesuglovS/BRS</string>
     <string name="Mian_StudentScore">Баллы студента</string>
     <string name="Main_OK">Ok</string>
     <string name="Main_Cancel">Отмена</string>
